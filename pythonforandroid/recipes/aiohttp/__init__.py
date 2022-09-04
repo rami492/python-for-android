@@ -10,7 +10,7 @@ class AIOHTTPRecipe(CythonRecipe):  # type: ignore # pylint: disable=R0903
     url = "https://github.com/aio-libs/aiohttp/archive/{version}.zip"
     name = "aiohttp"
 
-    depends: List[str] = ["setuptools"]
+    depends: List[str] = ["setuptools", "async-timeout", "attrs", "charset-normalizer", "multidict", "yarl"]
 
 
 recipe = AIOHTTPRecipe()
